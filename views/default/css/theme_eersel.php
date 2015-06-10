@@ -273,10 +273,20 @@ form.elgg-search,
 	margin: 0 0 20px;
 }
 
+.elgg-module-theme-eersel-sidebar .sidebar-social {
+	text-align: right;
+	margin-bottom: 20px;
+}
+.elgg-module-theme-eersel-sidebar .sidebar-social .fa {
+	margin-left: 5px;
+}
+
 .elgg-module-theme-eersel-sidebar.snel_naar > .elgg-body {
 	-ms-transform: rotate(-2deg); /* IE 9 */
     -webkit-transform: rotate(-2deg); /* Chrome, Safari, Opera */
     transform: rotate(-2deg);
+    
+    padding: 20px 20px 0 40px;
 }
 .elgg-module-theme-eersel-sidebar.groups {
 	background: url('<?php echo THEME_GRAPHICS; ?>mijn_1.png') bottom left no-repeat;
@@ -590,7 +600,7 @@ form.elgg-search,
 }
 
 .theme-eersel-slider {
-	right: 425px;
+	right: 0px;
 	position: absolute;
 	top: 50px;
 }
