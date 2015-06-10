@@ -100,7 +100,7 @@ h6 { font-size: 0.8em; }
 	font-family: Georgia, times, serif;
 	text-shadow: 1px 2px 4px #333333;
 	text-decoration: none;
-	padding-top: 40px;
+	padding-top: 13px;
 	position: absolute;
 	
 }

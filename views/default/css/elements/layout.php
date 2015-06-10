@@ -19,13 +19,13 @@
 .elgg-page-default {
 	min-width: 998px;
 	min-height: 830px;
-	background: url('<?php echo THEME_GRAPHICS; ?>bg_head.jpg') top center no-repeat;
+	background: url('<?php echo THEME_GRAPHICS; ?>bg_head.jpg') center -70px no-repeat;
 }
 .elgg-page-default .elgg-page-header > .elgg-inner {
 	min-width: 990px;
 	max-width: 1138px;
 	margin: 0 auto;
-	height: 210px;
+	height: 145px;
 }
 .elgg-page-default .elgg-page-body > .elgg-inner {
 	min-width: 990px;
