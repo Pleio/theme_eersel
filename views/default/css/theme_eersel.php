@@ -584,6 +584,44 @@ form.elgg-search,
 .sidebar-social .fa-linkedin-square {
 	color: #196293;
 }
+
 .sidebar-social .fa:hover {
 	color: #1a1a19;
+}
+
+.theme-eersel-slider {
+	right: 425px;
+	position: absolute;
+	top: 50px;
+}
+.theme-eersel-slider li {
+	display: inline-block;
+	margin-right: 20px;
+	position: relative;
+}
+.theme-eersel-slider li:before {
+	background: url('<?php echo THEME_GRAPHICS; ?>punaise_34px.png') top center no-repeat;
+	display: block;
+	width: 100%;
+	height: 40px;
+	content: "";
+	position: absolute;
+	top: -25px;
+}
+.theme-eersel-slider li img {
+	height: 80px;
+	border: 2px solid white;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+}
+.theme-eersel-slider li:first-child {
+	-ms-transform: rotate(5deg); /* IE 9 */
+    -webkit-transform: rotate(5deg); /* Chrome, Safari, Opera */
+    transform: rotate(5deg);
+}
+.theme-eersel-slider li:last-child {
+	-ms-transform: rotate(-5deg); /* IE 9 */
+    -webkit-transform: rotate(-5deg); /* Chrome, Safari, Opera */
+    transform: rotate(-5deg);
 }
