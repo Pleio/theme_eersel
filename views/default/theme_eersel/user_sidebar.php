@@ -10,7 +10,14 @@ $links = json_decode($links, true);
 
 if ($links) {
 
-	$title = "<h3>Ga snel naar</h3>";
+	$title = "<div class='sidebar-social'>";
+	
+	$title .= "<i class='fa fa-facebook-square'></i>";
+	$title .= "<i class='fa fa-twitter-square'></i>";
+	$title .= "<i class='fa fa-linkedin-square'></i>";
+	$title .= "<i class='fa fa-youtube-square'></i>";
+	$title .= "</div>";
+	$title .= "<h3>Ga snel naar</h3>";
 	
 	$body = "<ul>";
 	foreach ($links as $link) {
