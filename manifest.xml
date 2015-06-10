@@ -3,13 +3,26 @@
 	<name>Theme Eersel</name>
 	<author>ColdTrick IT Solutions</author>
 	<version>1.0</version>
-	<category>ColdTrick</category>
-	<category>theme</category>
 	<description>Template for Eersel</description>
+	<id>theme_eersel</id>
 	<website>http://www.coldtrick.com/</website>
 	<license>GNU General Public License version 2</license>
+	
 	<requires>
 		<type>elgg_release</type>
-		<version>1.8</version>
+		<version>1.8.15</version>
 	</requires>
+	
+	<requires>
+		<type>plugin</type>
+		<name>fontawesome</name>
+	</requires>
+	<requires>
+		<type>priority</type>
+		<plugin>fontawesome</plugin>
+		<priority>after</priority>
+	</requires>
+	
+	<category>ColdTrick</category>
+	<category>theme</category>
 </plugin_manifest>

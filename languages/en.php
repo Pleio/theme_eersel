@@ -39,6 +39,14 @@ $english = array(
 	
 	'theme_eersel:widgets:profile_owner_block:title' => "Profile",
 	'theme_eersel:widgets:profile_owner_block:description' => "Show profile icon + menu",
+	
+	'theme_eersel:user_sidebar:links' => "Navigate to",
+	'theme_eersel:user_sidebar:groups' => "My groups",
+	'theme_eersel:user_sidebar:friends' => "My friends",
+	'theme_eersel:user_sidebar:files' => "My files",
+	'' => "",
+	'' => "",
+	'' => "",
 
 );
 
