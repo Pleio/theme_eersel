@@ -538,7 +538,6 @@ form.elgg-search,
 .widget_manager_hide_header,
 .widget_manager_hide_header_admin {
 	padding: 0;
-	background: white;
 }
 
 .widget_manager_hide_header .elgg-menu-widget > li,
@@ -568,4 +567,23 @@ form.elgg-search,
 	background: white;
 	color: #333;
 	font-size: 12px;
+}
+
+.sidebar-social .fa {
+	font-size: 30px;
+}
+.sidebar-social .fa-facebook-square {
+	color: #0c508b;
+}
+.sidebar-social .fa-twitter-square {
+	color: #00a5e4;
+}
+.sidebar-social .fa-youtube-square {
+	color: #ee1124;
+}
+.sidebar-social .fa-linkedin-square {
+	color: #196293;
+}
+.sidebar-social .fa:hover {
+	color: #1a1a19;
 }

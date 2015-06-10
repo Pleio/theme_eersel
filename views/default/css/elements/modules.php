@@ -138,6 +138,11 @@
 	position: relative;
 }
 
+.elgg-module-widget > .elgg-body {
+	-webkit-border-radius: 0 0 4px 4px;
+	-moz-border-radius: 0 0 4px 4px;
+	border-radius: 0 0 4px 4px;
+}
 .elgg-module-widget > .elgg-head {
 	height: 35px;
 	line-height: 35px;
