@@ -472,6 +472,8 @@ form.elgg-search,
 	text-align: center;
 	top: 0;
 	right: 5px;
+	
+	z-index: 1;
 }
 
 .theme-eersel-widget-blauw,
