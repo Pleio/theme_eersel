@@ -56,6 +56,7 @@ $params = array(
 	'sidebar' => $sidebar,
 	'title' => $group->name,
 	'filter' => '',
+	'class' => "theme-eersel-profile-page"
 );
 $body = elgg_view_layout('content', $params);
 
