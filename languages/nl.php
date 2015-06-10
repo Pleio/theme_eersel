@@ -4,7 +4,7 @@
  */
 
 $dutch = array(
-	'theme_eersel' => 'Theme Reusel - De Mieden',
+	'theme_eersel' => 'Theme Eersel',
 	'theme_eersel:menu:home' => 'Homepagina',
 	'theme_eersel:menu:activity' => 'Actueel',
 	'theme_eersel:menu:activity:thewire' => "Wat houd je bezig",
@@ -25,7 +25,7 @@ $dutch = array(
 	'theme_eersel:menu:add:album' => 'Fotoalbum creëren',
 	'theme_eersel:search:text' => 'Wat zoek je?',
 	
-	'admin:appearance:theme_eersel' => "Theme Reusel - De Mieden",
+	'admin:appearance:theme_eersel' => "Theme Eersel",
 	
 	'theme_eersel:slider_upload' => "Slider afbeeldingen uploaden",
 	'theme_eersel:slider_upload:description' => "Hier kun je afbeeldingen uploaden welke in de slider zullen worden getoond. Deze afbeeldingen moeten de volgende afmetingen hebben 280px bij 150px.",
@@ -35,7 +35,7 @@ $dutch = array(
 	'theme_eersel:slider_upload:image_4' => "Afbeelding 4",
 	'theme_eersel:slider_upload:image_5' => "Afbeelding 5",
 	
-	'theme_eersel:action:slider_upload:done' => "Theme Reusel - De Mieden",
+	'theme_eersel:action:slider_upload:done' => "Theme Eersel",
 	
 	'theme_eersel:widgets:profile_owner_block:title' => "Profiel",
 	'theme_eersel:widgets:profile_owner_block:description' => "Toont profiel icoon + menu",

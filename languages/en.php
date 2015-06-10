@@ -4,7 +4,7 @@
  */
 
 $english = array(
-	'theme_eersel' => 'Theme Reusel - De Mieden',
+	'theme_eersel' => 'Theme Eersel',
 	'theme_eersel:menu:home' => 'Homepage',
 	'theme_eersel:menu:activity' => 'Activity',
 	'theme_eersel:menu:activity:thewire' => "What's up",
@@ -25,7 +25,7 @@ $english = array(
 	'theme_eersel:menu:add:album' => 'Create photoalbum',
 	'theme_eersel:search:text' => 'What are you looking for',
 	
-	'admin:appearance:theme_eersel' => "Theme Reusel - De Mieden",
+	'admin:appearance:theme_eersel' => "Theme Eersel",
 	
 	'theme_eersel:slider_upload' => "Header slider image upload",
 	'theme_eersel:slider_upload:description' => "Here you can upload images to be shown in the header slider. These images need to be 280px by 150px.",
@@ -35,7 +35,7 @@ $english = array(
 	'theme_eersel:slider_upload:image_4' => "Image 4",
 	'theme_eersel:slider_upload:image_5' => "Image 5",
 	
-	'theme_eersel:action:slider_upload:done' => "Theme Reusel - De Mieden",
+	'theme_eersel:action:slider_upload:done' => "Theme Eersel",
 	
 	'theme_eersel:widgets:profile_owner_block:title' => "Profile",
 	'theme_eersel:widgets:profile_owner_block:description' => "Show profile icon + menu",

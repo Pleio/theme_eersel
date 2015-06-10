@@ -1984,6 +1984,29 @@
 /* ***************************************
 			AVATAR ICONS
 *************************************** */
+.elgg-menu-topbar .elgg-menu-item-profile img {
+	border: 2px solid white;
+	
+	-webkit-border-radius: 6px !important;
+	-moz-border-radius: 6px !important;
+	border-radius: 6px !important;
+	
+	-ms-transform: rotate(4deg); /* IE 9 */
+    -webkit-transform: rotate(4deg); /* Chrome, Safari, Opera */
+    transform: rotate(4deg);
+}
+.elgg-avatar img {
+	border: 2px solid white;
+	
+	-webkit-border-radius: 6px !important;
+	-moz-border-radius: 6px !important;
+	border-radius: 6px !important;
+	
+	-ms-transform: rotate(-4deg); /* IE 9 */
+    -webkit-transform: rotate(-4deg); /* Chrome, Safari, Opera */
+    transform: rotate(-4deg);
+	
+}
 .elgg-avatar-tiny {
   position: relative;
   display: inline-block;
@@ -2266,5 +2289,5 @@
 
 .elgg-menu-entity .elgg-icon:hover,
 .elgg-menu-river .elgg-icon:hover {
-	color: #<?php echo THEME_COLOR_5;?>;		
+	color: #<?php echo THEME_COLOR_5;?>;
 }

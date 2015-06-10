@@ -31,19 +31,17 @@ input, textarea {
 	color: #666;
 	font: 120% Arial, Helvetica, sans-serif;
 	padding: 5px;
-	width: 100%;	
-	-webkit-border-radius: 5px;
-	-moz-border-radius: 5px;
-	border-radius: 5px;
+	width: 100%;
+
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 }
 
-input[type=text]:focus, 
-input[type=password]:focus, 
+input[type=text]:focus,
+input[type=password]:focus,
 textarea:focus {
-	border: solid 1px #<?php echo THEME_COLOR_6; ?>;
+	border: solid 1px #<?php echo THEME_COLOR_1; ?>;
 	background: #e4ecf5;
 	color:#333;
 }

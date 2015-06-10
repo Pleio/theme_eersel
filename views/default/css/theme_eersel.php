@@ -21,46 +21,6 @@
 	padding-top: 0px;
 }
 
-.theme-eersel-slider {
-	overflow: hidden;
-	width: 300px;
-	height: 174px;
-	position: absolute;
-	left: 340px;
-	top: 0px;
-}
-.theme-eersel-slider-overlay {
-	background: url('<?php echo THEME_GRAPHICS; ?>slider.png') top center no-repeat; 
-	width: 360px; 
-	height: 174px;
-	position: absolute;
-	top: 0px;
-	left: 320px;
-}
-
-.theme-eersel-slider .slides {
-    height: 174px;
-    left: 15px;
-    overflow: hidden;
-    position: absolute;
-    top: 0px;
-    width: 450px;
-}
-
-.theme-eersel-slider .flex-viewport {
-    height: 150px;
-    left: 0px;
-    overflow: hidden;
-    position: absolute;
-    top: 0px;
-    width: 300px;
-}
-
-.theme-eersel-slider .flex-control-paging,
-.theme-eersel-slider .flex-direction-nav {
-	display: none;
-}
-
 .elgg-module-aside a {
 	color: white;
 }
@@ -112,7 +72,7 @@
 
 
 .elgg-search-header {
-	position: relative; 
+	position: relative;
 	bottom: auto;
 	right: auto;
 	margin: 5px;
@@ -207,7 +167,7 @@ form.elgg-search,
 
 #profile-details .even,
 #profile-details .odd,
-.groups-profile-fields .odd, 
+.groups-profile-fields .odd,
 .groups-profile-fields .even {
 	background: #<?php echo THEME_COLOR_3; ?>;
 	box-shadow: 0 3px 3px rgba(0, 0, 0, 0.15);
@@ -221,7 +181,7 @@ form.elgg-search,
 .elgg-river-comments-tab,
 #profile-details .even b,
 #profile-details .odd b,
-.groups-profile-fields .odd b, 
+.groups-profile-fields .odd b,
 .groups-profile-fields .even b,
 .profile-aboutme-title {
 	color: #<?php echo THEME_COLOR_1; ?>;
@@ -282,9 +242,8 @@ form.elgg-search,
 }
 
 .elgg-module-theme-eersel-sidebar {
-	border-bottom: 1px dashed #333;
-	padding-bottom: 10px;
-	margin-bottom: 10px;
+	margin-bottom: 20px;
+    padding-bottom: 30px;
 }
 
 .elgg-module-theme-eersel-sidebar > .elgg-head > h3 {
@@ -304,6 +263,29 @@ form.elgg-search,
 
 .elgg-module-theme-eersel-sidebar .fa {
 	color: #<?php echo THEME_COLOR_1; ?>;
+}
+
+.elgg-module-theme-eersel-sidebar.snel_naar {
+	background: url('<?php echo THEME_GRAPHICS; ?>snel_naar.png') bottom left no-repeat;
+	width: 229px;
+	height: 293px;
+	padding: 0;
+	margin: 0 0 20px;
+}
+
+.elgg-module-theme-eersel-sidebar.snel_naar > .elgg-body {
+	-ms-transform: rotate(-2deg); /* IE 9 */
+    -webkit-transform: rotate(-2deg); /* Chrome, Safari, Opera */
+    transform: rotate(-2deg);
+}
+.elgg-module-theme-eersel-sidebar.groups {
+	background: url('<?php echo THEME_GRAPHICS; ?>mijn_1.png') bottom left no-repeat;
+}
+.elgg-module-theme-eersel-sidebar.friends{
+	background: url('<?php echo THEME_GRAPHICS; ?>mijn_2.png') bottom left no-repeat;
+}
+.elgg-module-theme-eersel-sidebar.files {
+	background: url('<?php echo THEME_GRAPHICS; ?>mijn_3.png') bottom left no-repeat;
 }
 
 .elgg-form-groups-find .elgg-input-text,
@@ -335,7 +317,7 @@ form.elgg-search,
 	font-size: 18px;
 	text-align: center;
 	line-height: 30px;
-	text-transform: uppercase;	
+	text-transform: uppercase;
 }
 
 .groups-profile-fields .fa-caret-down {
@@ -443,7 +425,7 @@ form.elgg-search,
 
 .theme-eersel-topbar-status-new {
 	position: absolute;
-	background: orange;
+	background: #498f96;
 	color: white;
 	border-radius: 10px !important;
 	position: absolute;
@@ -460,7 +442,6 @@ form.elgg-search,
 .theme-eersel-widget-blauw,
 .elgg-widget-instance-index_thewire {
 	padding: 0;
-	background: white;
 }
 
 .theme-eersel-widget-blauw .elgg-menu-widget > li,

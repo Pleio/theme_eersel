@@ -164,6 +164,20 @@
 	height: 18px;
 }
 
+.elgg-menu-topbar-default .fa {
+	color: #007379;
+}
+.elgg-menu-topbar-default .fa:hover {
+	color: #cccd1c;
+}
+
+.elgg-menu-topbar-alt .fa {
+	color: #cccd1c;
+}
+.elgg-menu-topbar-alt .fa:hover {
+	color: #007379;
+}
+
 /* ***************************************
 	SITE MENU
 *************************************** */
@@ -225,7 +239,7 @@
 	text-transform: uppercase;
 	font-size: 11px;
 	
-	background: url('<?php echo THEME_GRAPHICS; ?>menu_divider.png') center 30px no-repeat; 
+	background: url('<?php echo THEME_GRAPHICS; ?>menu_divider.png') center 30px no-repeat;
 }
 
 .elgg-menu-site > li > ul {
@@ -370,8 +384,8 @@
 	display: block;
 	line-height: 31px;
 	font-size: 14px;
-	color: #<?php echo THEME_COLOR_1; ?>;
-	background-color: #<?php echo THEME_COLOR_2; ?>;
+	color: white;
+	background-color: #<?php echo THEME_COLOR_1; ?>;
 	margin: 3px 0 5px 0;
 	padding: 2px 4px 2px 8px;
 }
@@ -510,7 +524,8 @@
 	display: block;
 	line-height: 31px;
 	font-size: 14px;
-	background-color: #<?php echo THEME_COLOR_5; ?>;
+	color: white;
+	background-color: #<?php echo THEME_COLOR_1; ?>;
 	margin: 3px 0 5px 0;
 	padding: 2px 4px 2px 8px;
 }
@@ -570,7 +585,6 @@
 *************************************** */
 .elgg-menu-widget > li {
 	position: absolute;
-	top: 50px;
 	display: inline-block;
 	width: 18px;
 	height: 18px;

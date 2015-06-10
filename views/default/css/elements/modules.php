@@ -100,6 +100,7 @@
 }
 .elgg-widget-add-control {
 	text-align: right;
+	padding: 0 0 10px 0;
 }
 .elgg-widgets-add-panel {
 	padding: 10px;
@@ -132,40 +133,44 @@
 }
 
 .elgg-module-widget {
-	padding: 50px 0 0 0;
+	padding: 0;
 	margin: 0 0 15px;
 	position: relative;
-	
-	background: transparent url('<?php echo THEME_GRAPHICS; ?>widget_header.png') top left no-repeat;
-	
 }
 
 .elgg-module-widget > .elgg-head {
 	height: 35px;
 	line-height: 35px;
-	
+	background: #<?php echo THEME_COLOR_8; ?>;
+	color: white;
 	overflow: hidden;
+	
+	-webkit-border-radius:4px 4px 0 0;
+	-moz-border-radius:4px 4px 0 0;
+	border-radius:4px 4px 0 0;
 }
 .elgg-module-widget > .elgg-head h3 {
 	color: #333;
-	font-weight: bold;
+	font-weight: normal;
 	font-size: 13px;
 	padding-left: 10px;
+	color: white;
+	float: left;
 }
 
 .elgg-module-widget > .elgg-head a {
-	color: #333;
+	color: white;
 }
 
 .elgg-module-widget.elgg-state-draggable .elgg-widget-handle {
 	cursor: move;
 }
 a.elgg-widget-collapse-button {
-	color: #c5c5c5;
+	color: white;
 }
 a.elgg-widget-collapse-button:hover,
 a.elgg-widget-collapsed:hover {
-	color: #9d9d9d;
+	color: white;
 	text-decoration: none;
 }
 a.elgg-widget-collapse-button:before {

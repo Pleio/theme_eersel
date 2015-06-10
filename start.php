@@ -3,15 +3,16 @@
  * Main file for this plugin
  */
 
-define("THEME_GRAPHICS", elgg_get_site_url() . "mod/theme_eersel/_graphics/"); 
+define("THEME_GRAPHICS", elgg_get_site_url() . "mod/theme_eersel/_graphics/");
 
-define("THEME_COLOR_1", "00774D"); // Donkergroen
+define("THEME_COLOR_1", "498f96"); // Donkergroen
 define("THEME_COLOR_2", "CCE4DB"); // Lichtgroen
 define("THEME_COLOR_3", "F5F1E9"); // Beige
 
 
 define("THEME_COLOR_4", "d3e0bb"); // Groen meest licht: # d3e0bb (achtergrond menu’s rechts)
-define("THEME_COLOR_5", "CCE4DB"); // Groen huisstijlkleur: # b5cb8d (kaders kop widget)
+define("THEME_COLOR_5", "498f96"); // TEAL
+define("THEME_COLOR_8", "acb26b"); // green
 define("THEME_COLOR_6", "00774D"); // Groen meest donker: # a0b67c (voor linkjes en buttons)
 define("THEME_COLOR_7", "00A5E4"); // Blauw: # 333590 (widgets)
 
@@ -24,21 +25,21 @@ elgg_register_event_handler("init", "system", "theme_eersel_translations", 99999
 
 /**
  * Initialize the theme
- * 
+ *
  * @return void
  */
 function theme_eersel_init() {
 	
 	elgg_register_css('font-awesome', 'mod/theme_eersel/vendors/font-awesome-4.0.3/css/font-awesome.min.css');
 	elgg_load_css('font-awesome');
-		
+			
 	elgg_extend_view("js/elgg", "js/theme_eersel");
 	elgg_extend_view("css/elgg", "css/theme_eersel");
 	elgg_extend_view("css/elgg", "css/theme_eersel_images");
 	elgg_extend_view("page/layouts/widgets", "theme_eersel/widgets_fix");
 	
-	elgg_register_js('jquery.flexslider', 'mod/theme_eersel/vendors/jquery.flexslider/jquery.flexslider-min.js');
-	elgg_load_js('jquery.flexslider');
+// 	elgg_register_js('jquery.flexslider', 'mod/theme_eersel/vendors/jquery.flexslider/jquery.flexslider-min.js');
+// 	elgg_load_js('jquery.flexslider');
 
 	elgg_unextend_view("page/elements/header", "search/header");
 	elgg_unextend_view("page/elements/owner_block/extend", "group_tools/owner_block");
@@ -60,7 +61,7 @@ function theme_eersel_init() {
 
 /**
  * Custom translations for this theme
- * 
+ *
  * @return void
  */
 function theme_eersel_translations() {

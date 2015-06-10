@@ -7,12 +7,6 @@
  */
 ?>
 
-* {
-	-webkit-border-radius: 0 !important;
-	-moz-border-radius: 0 !important;
-	border-radius: 0 !important;
-}
-
 /* ***************************************
 	RESET CSS
 *************************************** */
@@ -35,7 +29,7 @@ table, caption, tbody, tfoot, thead, tr, th, td {
 	vertical-align: baseline;
 }
 body {
-	background: url('<?php echo THEME_GRAPHICS; ?>body_bg.jpg') center 830px;
+	background: url('<?php echo THEME_GRAPHICS; ?>bg.jpg') top center repeat-y;
 }
 <?php // force vertical scroll bar ?>
 html, body {

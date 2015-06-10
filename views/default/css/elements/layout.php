@@ -19,7 +19,7 @@
 .elgg-page-default {
 	min-width: 998px;
 	min-height: 830px;
-	background: url('<?php echo THEME_GRAPHICS; ?>bg_logged_in.jpg') top center no-repeat;
+	background: url('<?php echo THEME_GRAPHICS; ?>bg_head.jpg') top center no-repeat;
 }
 .elgg-page-default .elgg-page-header > .elgg-inner {
 	min-width: 990px;
@@ -54,7 +54,7 @@
 	margin: 0 auto;
 }
 .elgg-page-topbar-theme {
-	background: #<?php echo THEME_COLOR_1; ?>;
+	background: white;
 	position: relative;
 	height: 30px;
 }
@@ -106,9 +106,7 @@
 	float: right;
 	width: 240px;
 	margin: 0 0 0 10px;
-	background: #<?php echo THEME_COLOR_1; ?>;
 	color: white;
-	box-shadow: 0 3px 3px rgba(0, 0, 0, 0.15);
 }
 
 .elgg-sidebar > div {
@@ -122,7 +120,6 @@
 	width: 240px;
 	margin: 0 10px 0 0;
 	background: none;
-	border-top: 1px dashed #333;
 }
 .elgg-main {
 	position: relative;

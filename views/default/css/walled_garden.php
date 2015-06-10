@@ -7,8 +7,13 @@ $url = elgg_get_site_url();
 
 ?>
 /* <style> /**/
+
+body {
+	background: url('<?php echo THEME_GRAPHICS; ?>bg.jpg') top center repeat-y;
+}
+
 .elgg-page-walledgarden {
-	background: url('<?php echo THEME_GRAPHICS; ?>bg_logged_out.jpg') top center no-repeat;
+	background: url('<?php echo THEME_GRAPHICS; ?>bg_head.jpg') top center no-repeat;
 	padding-top: 0px;
 	width: 100%;
 	height: 100%;
@@ -22,11 +27,21 @@ $url = elgg_get_site_url();
 }
 .elgg-module-walledgarden {
 	position: absolute;
-	top: 330px;
-	left: 90px;
+	top: 300px;
 	background: white;
-	width: 300px;
-	background: transparent;
+	width: 432px;
+	height: 480px;
+	background: url('<?php echo THEME_GRAPHICS; ?>form_inlog.png') top center no-repeat;
+}
+.elgg-module-walledgarden > .elgg-body {
+	width: 250px;
+	position: absolute;
+	top: 200px;
+	left: 100px;
+	
+	-ms-transform: rotate(-2deg); /* IE 9 */
+    -webkit-transform: rotate(-2deg); /* Chrome, Safari, Opera */
+    transform: rotate(-2deg);
 }
 .elgg-module-walledgarden .elgg-module .elgg-body {
 	padding: 20px 10px 10px;

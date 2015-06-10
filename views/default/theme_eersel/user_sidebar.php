@@ -10,18 +10,18 @@ $links = json_decode($links, true);
 
 if ($links) {
 
-	$title = "Ga snel naar";
+	$title = "<h3>Ga snel naar</h3>";
 	
 	$body = "<ul>";
 	foreach ($links as $link) {
 		if (empty($link["href"]) || empty($link["name"])) {
 			continue;
 		}
-		$body .= "<li><i class='fa fa-bookmark mrm'></i>" . elgg_view("output/url", array("text" => $link["name"], "href" => $link["href"])) . "</li>";
+		$body .= "<li><i class='fa fa-caret-right mrm'></i>" . elgg_view("output/url", array("text" => $link["name"], "href" => $link["href"])) . "</li>";
 	}
 	$body .= "</ul>";
 	
-	echo elgg_view_module("theme-eersel-sidebar", $title, $body);
+	echo elgg_view_module("theme-eersel-sidebar", "", $title . $body, array("class" => "snel_naar"));
 }
 
 $title = "Mijn Groepen";
@@ -46,7 +46,7 @@ if ($groups) {
 
 $body .= "<i class='fa fa-plus mrm'></i>" . elgg_view("output/url", array("text" => elgg_echo("groups:add"), "href" => "groups/add")) . "<br />";
 $body .= elgg_view("output/url", array("text" => elgg_echo("groups:all"), "href" => "groups/all"));
-echo elgg_view_module("theme-eersel-sidebar", $title, $body);
+echo elgg_view_module("theme-eersel-sidebar", $title, $body, array("class" => "groups"));
 
 $title = "Mijn contacten";
 $body = "";
@@ -69,7 +69,7 @@ if ($friends) {
 }
 
 $body .= elgg_view("output/url", array("text" => elgg_echo("members"), "href" => "members/all"));
-echo elgg_view_module("theme-eersel-sidebar", $title, $body);
+echo elgg_view_module("theme-eersel-sidebar", $title, $body, array("class" => "friends"));
 
 $title = "Mijn bestanden";
 $body = "";
@@ -92,7 +92,7 @@ if ($files) {
 }
 
 $body .= elgg_view("output/url", array("text" => elgg_echo("file:all"), "href" => "file/all"));
-echo elgg_view_module("theme-eersel-sidebar", $title, $body);
+echo elgg_view_module("theme-eersel-sidebar", $title, $body, array("class" => "files"));
 
 
 

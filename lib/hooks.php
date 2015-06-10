@@ -6,7 +6,7 @@
 
 /**
  * Return the site menu
- * 
+ *
  * @param string $hook        name of the hook
  * @param string $entity_type type of the hook
  * @param array  $returnvalue current return value
@@ -50,19 +50,19 @@ function theme_eersel_register_topbar_menu_handler($hook, $entity_type, $returnv
 	if (elgg_is_admin_logged_in()) {
 		$menu_items[] = ElggMenuItem::factory(array("name" => "admin", "title" => elgg_echo("admin"), "href" => "admin", "text" => "<i class='fa fa-gears'></i>", "section" => "alt"));
 	}
-	$menu_items[] = ElggMenuItem::factory(array("name" => "profile", "title" => elgg_echo("profile"), "href" => $user->getURL(), "text" => elgg_view("output/img", array("src" => $user->getIconURL('tiny'))), "section" => "alt"));
+	$menu_items[] = ElggMenuItem::factory(array("name" => "profile", "title" => elgg_echo("profile"), "href" => $user->getURL(), "text" => elgg_view("output/img", array("src" => $user->getIconURL('small'))), "section" => "alt"));
 
 	return $menu_items;
 }
 
 /**
  * Add some icons before some menu items
- * 
+ *
  * @param string         $hook        name of the hook
  * @param string         $entity_type type of the hook
  * @param ElggMenuItem[] $returnvalue current return value
  * @param array          $params      extra params
- * 
+ *
  * @return ElggMenuItem[]
  */
 function theme_eersel_prepare_owner_block_menu_handler($hook, $entity_type, $returnvalue, $params) {
