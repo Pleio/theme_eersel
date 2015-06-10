@@ -388,6 +388,10 @@
 	background-color: #<?php echo THEME_COLOR_1; ?>;
 	margin: 3px 0 5px 0;
 	padding: 2px 4px 2px 8px;
+		
+	-webkit-border-radius: 8px;
+	-moz-border-radius: 8px;
+	border-radius: 8px;
 }
 .elgg-menu-page a:hover {
 	color: white;
@@ -528,6 +532,10 @@
 	background-color: #<?php echo THEME_COLOR_1; ?>;
 	margin: 3px 0 5px 0;
 	padding: 2px 4px 2px 8px;
+	
+	-webkit-border-radius: 8px;
+	-moz-border-radius: 8px;
+	border-radius: 8px;
 }
 .elgg-menu-owner-block li a:hover {
 	background-color: #<?php echo THEME_COLOR_1; ?>;

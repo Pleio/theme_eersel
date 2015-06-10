@@ -28,7 +28,11 @@ if (isset($vars['title'])) {
 			echo elgg_view('page/elements/sidebar', $vars);
 		?>
 	</div>
-	<?php if (!elgg_in_context("group_profile") && !elgg_in_context("profile")) {?>
+	<?php
+		//if (!elgg_in_context("group_profile") && !elgg_in_context("profile")) {
+		if (elgg_in_context("index")) {
+
+	?>
 	<div class="elgg-sidebar-alt">
 		<?php
 			echo elgg_view('page/elements/sidebar_alt', $vars);

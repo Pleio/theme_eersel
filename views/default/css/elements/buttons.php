@@ -17,6 +17,10 @@
 	padding: 2px 4px;
 	cursor: pointer;
 	outline: none;
+	
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
 }
 a.elgg-button {
 	padding: 3px 6px;
@@ -81,7 +85,6 @@ a.elgg-button {
 	text-decoration: none;
 	border: 1px solid #333;
 	background: #555 url(<?php echo elgg_get_site_url(); ?>_graphics/button_graduation.png) repeat-x left 10px;
-	text-shadow: 1px 1px 0px black;
 }
 .elgg-button-delete:hover {
 	color: #999;

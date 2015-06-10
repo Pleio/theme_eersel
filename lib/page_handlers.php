@@ -69,7 +69,8 @@ function theme_eersel_profile_page_handler($page) {
 		"title" => $title,
 		"content" => $content,
 		"sidebar" => $sidebar,
-		"filter" => false
+		"filter" => false,
+		"class" => "theme-eersel-profile-page"
 	));
 	echo elgg_view_page($user->name, $body);
 	

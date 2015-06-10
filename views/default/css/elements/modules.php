@@ -8,12 +8,29 @@
 }
 
 /* Aside */
-.elgg-module-aside .elgg-head {
-	padding-bottom: 5px;
+.elgg-module-aside {
+	position: relative;
+	margin-bottom: 30px;
+	overflow: visible;
 }
-
-.elgg-sidebar .elgg-module-aside {
-	margin-top: 20px;
+.elgg-module-aside .elgg-head {
+	padding: 5px 20px;
+	position: absolute;
+	right: 10px;
+	top: -15px;
+	
+	background: #<?php echo THEME_COLOR_1; ?>;
+	color: white;
+	
+	border: 2px solid white;
+	
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+	
+	-ms-transform: rotate(3deg); /* IE 9 */
+    -webkit-transform: rotate(3deg); /* Chrome, Safari, Opera */
+    transform: rotate(3deg);
 }
 
 /* Info */
@@ -100,7 +117,7 @@
 }
 .elgg-widget-add-control {
 	text-align: right;
-	padding: 0 0 10px 0;
+	padding: 10px 0 10px 0;
 }
 .elgg-widgets-add-panel {
 	padding: 10px;
