@@ -30,7 +30,7 @@ elgg_register_event_handler("init", "system", "theme_eersel_translations", 99999
  */
 function theme_eersel_init() {
 	
-	elgg_register_css('font-awesome', 'mod/theme_eersel/vendors/font-awesome-4.0.3/css/font-awesome.min.css');
+	elgg_register_css('font-awesome', 'mod/theme_eersel/vendors/font-awesome-4.3.0/css/font-awesome.min.css');
 	elgg_load_css('font-awesome');
 			
 	elgg_extend_view("js/elgg", "js/theme_eersel");
