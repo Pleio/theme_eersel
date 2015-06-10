@@ -427,12 +427,6 @@ form.elgg-search,
 	color: #<?php echo THEME_COLOR_7; ?>;
 }
 
-.theme-eersel-tape {
-	position: absolute;
-	right: 10px;
-    top: -20px;
-}
-
 .theme-eersel-topbar-status-new {
 	position: absolute;
 	background: #498f96;

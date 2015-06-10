@@ -33,8 +33,4 @@ if (isset($vars['area3'])) {
 	$body .= $vars['area3'];
 }
 
-if (!empty($body)) {
-	echo elgg_view("output/img", array("src" => THEME_GRAPHICS . "tape.png", "class" => "theme-eersel-tape"));
-}
-
 echo $body;
