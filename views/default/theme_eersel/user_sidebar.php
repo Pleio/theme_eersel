@@ -12,10 +12,10 @@ $links = json_decode($links, true);
 if ($links) {
 
 	$title = "<div class='sidebar-social'>";
-	$title .= elgg_view_icon('facebook-square');
-	$title .= elgg_view_icon('twitter-square');
-	$title .= elgg_view_icon('linkedin-square');
-	$title .= elgg_view_icon('youtube-square');
+	$title .= "<i class='fa fa-facebook-square'></i>";
+	$title .= "<i class='fa fa-twitter-square'></i>";
+	$title .= "<i class='fa fa-linkedin-square'></i>";
+	$title .= "<i class='fa fa-youtube-square'></i>";
 	$title .= "</div>";
 	
 	$title .= "<h3>" . elgg_echo('theme_eersel:user_sidebar:links') . "</h3>";
@@ -27,7 +27,7 @@ if ($links) {
 		}
 		
 		$body .= "<li>";
-		$body .= elgg_view_icon('caret-right', 'mrm');
+		$body .= "<i class='fa fa-caret-right mrm'></i>";
 		$body .= elgg_view("output/url", array(
 			"text" => $link["name"],
 			"href" => $link["href"]
@@ -66,7 +66,7 @@ if (elgg_is_active_plugin('groups')) {
 		$body .= "</table>";
 	}
 	
-	$body .= elgg_view_icon('plus', 'mrm');
+	$body .= "<i class='fa fa-plus mrm'></i>";
 	$body .= elgg_view("output/url", array("text" => elgg_echo("groups:add"), "href" => "groups/add"));
 	$body .= "<br />";
 	$body .= elgg_view("output/url", array("text" => elgg_echo("groups:all"), "href" => "groups/all"));
