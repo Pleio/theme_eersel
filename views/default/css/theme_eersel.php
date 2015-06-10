@@ -21,19 +21,28 @@
 	padding-top: 0px;
 }
 
-.elgg-module-aside a {
-	color: white;
+.elgg-module-aside {
+	background: white;
+	padding: 20px;
+	
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
 }
 
 .elgg-module-aside h3 {
 	font-size: 14px;
 }
 
+.elgg-module-aside .fa {
+	color: #<?php echo THEME_COLOR_1; ?>;
+}
+
 .elgg-menu-groups-my-status li a {
 	display: block;
 	line-height: 31px;
 	font-size: 14px;
-	color: #<?php echo THEME_COLOR_1; ?>;
+	color: white;
 	background-color: #<?php echo THEME_COLOR_5; ?>;
 	margin: 3px 0 5px 0;
 	padding: 2px 4px 2px 8px;
@@ -50,24 +59,31 @@
 }
 #profile-owner-block {
 	background: transparent;
+	padding: 0 0 20px;
+	float: none;
+	width: auto;
 }
 
 #profile-owner-block a.elgg-button-action {
 	display: block;
-	border: 1px solid #<?php echo THEME_COLOR_2; ?>;
-	background: #<?php echo THEME_COLOR_2; ?>;
-	font-weight: normal;
-	text-align: left;
-	padding: 2px 4px 2px 8px;
 	line-height: 31px;
-	color: #<?php echo THEME_COLOR_1;?>;
+	font-size: 14px;
+	color: white;
+	background-color: #007379;
+	margin: 3px 0 5px 0;
+	padding: 2px 4px 2px 8px;
+	
+	-webkit-border-radius: 8px;
+	-moz-border-radius: 8px;
+	border-radius: 8px;
+	
+	text-align: left;
 }
 
 #profile-owner-block a.elgg-button-action:hover {
-	border-color: #<?php echo THEME_COLOR_1;?>;
-	text-decoration: none;
+	background-color: #<?php echo THEME_COLOR_1; ?>;
 	color: white;
-	background: #<?php echo THEME_COLOR_1;?>;
+	text-decoration: none;
 }
 
 
@@ -169,8 +185,7 @@ form.elgg-search,
 #profile-details .odd,
 .groups-profile-fields .odd,
 .groups-profile-fields .even {
-	background: #<?php echo THEME_COLOR_3; ?>;
-	box-shadow: 0 3px 3px rgba(0, 0, 0, 0.15);
+	background: rgba(255,255,255,0.85);
 }
 
 .subsite-manager-account-dropdown {
@@ -225,7 +240,7 @@ form.elgg-search,
 }
 
 .elgg-sidebar > .elgg-menu {
-	padding: 20px;
+	padding: 0 0 20px;
 }
 
 #elgg-widget-col-1 {
@@ -247,17 +262,18 @@ form.elgg-search,
 }
 
 .elgg-module-theme-eersel-sidebar > .elgg-head > h3 {
-	color: #333;
+	color: #1a1a19;
 	font-size: 14px;
 	padding-bottom: 5px;
+	font-weight: bold;
 }
 
 .elgg-module-theme-eersel-sidebar .elgg-body a {
-	color: #666;
+	color: #1a1a19;
 }
 
 .elgg-module-theme-eersel-sidebar .elgg-body a:hover {
-	color: #AAA;
+	color: #cccd1c;
 	text-decoration: none;
 }
 
@@ -280,7 +296,22 @@ form.elgg-search,
 .elgg-module-theme-eersel-sidebar .sidebar-social .fa {
 	margin-left: 5px;
 }
-
+.elgg-module-theme-eersel-sidebar.snel_naar h3 {
+	color: #1a1a19;
+	font-weight: normal;
+	margin-bottom: 10px;
+}
+.elgg-module-theme-eersel-sidebar.snel_naar ul a {
+	color: #1a1a19;
+	font-size: 13px;
+	line-height: 24px;
+}
+.elgg-module-theme-eersel-sidebar.snel_naar ul a:hover {
+	color: #498f96;
+}
+.elgg-module-theme-eersel-sidebar.snel_naar ul .fa {
+	color: #1a1a19;
+}
 .elgg-module-theme-eersel-sidebar.snel_naar > .elgg-body {
 	-ms-transform: rotate(-2deg); /* IE 9 */
     -webkit-transform: rotate(-2deg); /* Chrome, Safari, Opera */
@@ -377,11 +408,11 @@ form.elgg-search,
 }
 
 .profile-aboutme-title {
-	background: #<?php echo THEME_COLOR_3; ?>;
+	background: rgba(255,255,255,0.85);
 }
 
 .profile-aboutme-contents {
-	background: #<?php echo THEME_COLOR_3; ?>;
+	background: rgba(255,255,255,0.85);
 }
 
 #widget_profile_completeness_progress_bar {
@@ -407,7 +438,7 @@ form.elgg-search,
 }
 
 .elgg-sidebar > .elgg-owner-block {
-	padding-top: 20px;
+	padding: 0 0 20px;
 }
 .elgg-sidebar > .elgg-owner-block .elgg-head a {
 	color: white;
@@ -441,6 +472,8 @@ form.elgg-search,
 	text-align: center;
 	top: 0;
 	right: 5px;
+	
+	z-index: 1;
 }
 
 .theme-eersel-widget-blauw,
@@ -628,4 +661,22 @@ form.elgg-search,
 	-ms-transform: rotate(-5deg); /* IE 9 */
     -webkit-transform: rotate(-5deg); /* Chrome, Safari, Opera */
     transform: rotate(-5deg);
+}
+
+.theme-eersel-profile-page {
+	padding-top: 0px;
+}
+.theme-eersel-profile-page .elgg-heading-main {
+	font-size: 20px;
+	font-weight: bold;
+	color: white;
+}
+.theme-eersel-profile-page .elgg-main > table {
+	height: 265px;
+}
+
+.theme-eersel-profile-page .profile-content-menu {
+	position: absolute;
+    top: 330px;
+    width: 100%;
 }
