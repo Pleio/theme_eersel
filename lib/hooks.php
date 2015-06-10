@@ -122,3 +122,34 @@ function theme_eersel_prepare_owner_block_menu_handler($hook, $entity_type, $ret
 		}
 	}
 }
+
+/**
+ * ReRoute the /groups/profile to our handler
+ *
+ * @param string $hook        the name of the hook
+ * @param string $entity_type the type of the hook
+ * @param mixed  $returnvalue current return value
+ * @param mixed  $params      supplied params
+ *
+ * @return mixed|false|void
+ */
+function theme_eersel_route_groups_handler($hook, $entity_type, $returnvalue, $params) {
+	
+	if (empty($returnvalue) || !is_array($returnvalue)) {
+		return;
+	}
+	
+	$page = elgg_extract('segments', $returnvalue);
+	if (empty($page) || !is_array($page)) {
+		return;
+	}
+	
+	switch ($page[0]) {
+		case 'profile':
+			set_input('guid', elgg_extract(1, $page));
+			
+			include(dirname(dirname(__FILE__)) . '/pages/groups/profile.php');
+			return false;
+			break;
+	}
+}

@@ -53,6 +53,8 @@ function theme_eersel_init() {
 	elgg_register_plugin_hook_handler("register", "menu:topbar", "theme_eersel_register_topbar_menu_handler");
 	elgg_register_plugin_hook_handler("prepare", "menu:owner_block", "theme_eersel_prepare_owner_block_menu_handler");
 	
+	elgg_register_plugin_hook_handler('route', 'groups', 'theme_eersel_route_groups_handler');
+	
 	elgg_register_admin_menu_item("configure", "theme_eersel", "appearance");
 	
 	elgg_register_action("theme_eersel/slider_upload", dirname(__FILE__) . "/actions/slider_upload.php", "admin");
