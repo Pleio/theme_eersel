@@ -34,7 +34,7 @@ function theme_eersel_register_topbar_menu_handler($hook, $entity_type, $returnv
 	
 	// main menu
 	
-	$wiki_group = get_entity("30879832");
+	$wiki_group = get_entity("32599992");
 	
 	$menu_items[] = ElggMenuItem::factory(array("name" => "home", "title" => elgg_echo("theme_eersel:menu:home"), "href" => elgg_get_site_url(), "text" => "<i class='fa fa-home'></i>"));
 	$menu_items[] = ElggMenuItem::factory(array("name" => "groups", "title" => elgg_echo("theme_eersel:menu:groups:all"), "href" => "groups/all", "text" => "<i class='fa fa-group'></i>"));
