@@ -20,6 +20,7 @@
 	min-width: 998px;
 	min-height: 830px;
 	background: url('<?php echo THEME_GRAPHICS; ?>bg_head.jpg') center -70px no-repeat;
+	position: relative;
 }
 .elgg-page-default .elgg-page-header > .elgg-inner {
 	min-width: 990px;

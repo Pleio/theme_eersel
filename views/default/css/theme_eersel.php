@@ -680,3 +680,11 @@ form.elgg-search,
     top: 330px;
     width: 100%;
 }
+.theme-eersel-bottom-rings {
+	background: url('<?php echo THEME_GRAPHICS; ?>bottom_rings.png') bottom right no-repeat;
+	height: 441px;
+	width: 410px;
+	position: absolute;
+	right: 0;
+	bottom: 0;
+}

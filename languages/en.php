@@ -28,7 +28,7 @@ $english = array(
 	'admin:appearance:theme_eersel' => "Theme Eersel",
 	
 	'theme_eersel:slider_upload' => "Header slider image upload",
-	'theme_eersel:slider_upload:description' => "Here you can upload images to be shown in the header slider. These images need to be 280px by 150px.",
+	'theme_eersel:slider_upload:description' => "Here you can upload images to be shown in the header slider. These images need to be 110px by 82px.",
 	'theme_eersel:slider_upload:image_1' => "Image 1",
 	'theme_eersel:slider_upload:image_2' => "Image 2",
 	'theme_eersel:slider_upload:image_3' => "Image 3",

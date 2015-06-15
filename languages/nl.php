@@ -28,7 +28,7 @@ $dutch = array(
 	'admin:appearance:theme_eersel' => "Theme Eersel",
 	
 	'theme_eersel:slider_upload' => "Slider afbeeldingen uploaden",
-	'theme_eersel:slider_upload:description' => "Hier kun je afbeeldingen uploaden welke in de slider zullen worden getoond. Deze afbeeldingen moeten de volgende afmetingen hebben 280px bij 150px.",
+	'theme_eersel:slider_upload:description' => "Hier kun je afbeeldingen uploaden welke in de slider zullen worden getoond. Deze afbeeldingen moeten de volgende afmetingen hebben 110px bij 82px.",
 	'theme_eersel:slider_upload:image_1' => "Afbeelding 1",
 	'theme_eersel:slider_upload:image_2' => "Afbeelding 2",
 	'theme_eersel:slider_upload:image_3' => "Afbeelding 3",
@@ -39,7 +39,11 @@ $dutch = array(
 	
 	'theme_eersel:widgets:profile_owner_block:title' => "Profiel",
 	'theme_eersel:widgets:profile_owner_block:description' => "Toont profiel icoon + menu",
-
+	
+	'theme_eersel:user_sidebar:links' => "Ga snel naar",
+	'theme_eersel:user_sidebar:groups' => "Mijn groepen",
+	'theme_eersel:user_sidebar:friends' => "Mijn contacten",
+	'theme_eersel:user_sidebar:files' => "Mijn bestanden",
 );
 
 add_translation('nl', $dutch);

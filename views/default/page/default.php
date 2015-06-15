@@ -78,6 +78,9 @@ $lang = get_current_language();
 			<?php echo $footer; ?>
 		</div>
 	</div>
+	<?php if (elgg_is_logged_in()) { ?>
+	<div class="theme-eersel-bottom-rings"></div>
+	<?php }?>
 </div>
 <?php echo elgg_view('page/elements/foot'); ?>
 </body>
