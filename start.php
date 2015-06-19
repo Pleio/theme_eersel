@@ -49,6 +49,7 @@ function theme_eersel_init() {
 	elgg_register_page_handler("profile", "theme_eersel_profile_page_handler");
 	
 	elgg_register_widget_type("profile_owner_block", elgg_echo("theme_eersel:widgets:profile_owner_block:title"), elgg_echo("theme_eersel:widgets:profile_owner_block:description"), "profile");
+	elgg_register_widget_type("index_photos", elgg_echo("theme_eersel:widgets:index_photos:title"), elgg_echo("theme_eersel:widgets:index_photos:description"), "index");
 	
 	elgg_register_plugin_hook_handler("register", "menu:topbar", "theme_eersel_register_topbar_menu_handler");
 	elgg_register_plugin_hook_handler("prepare", "menu:owner_block", "theme_eersel_prepare_owner_block_menu_handler");

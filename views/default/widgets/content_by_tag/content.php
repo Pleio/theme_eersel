@@ -243,12 +243,11 @@ if (in_array($display_option, array("slim","simple"))) {
 					$result .= elgg_view_image_block($icon, $text);
 				} else {
 					$result .= "<div>";
-					$result .= "<i class='fa fa-chevron-circle-right mrm'></i>";
-						
-					if ($show_timestamp) {
-						$result .= "<span title='" . strftime("%c", $entity->time_created) . "'>" . strftime("%d %b", $entity->time_created) . "</span> - ";
-					}
 					$result .= "<a href='" . $entity_url . "'>" . $entity->title . "</a>";
+					
+					if ($show_timestamp) {
+						$result .= "<span class='float-alt' title='" . strftime("%d %b %Y", $entity->time_created) . "'>" . strftime("%d %b %Y", $entity->time_created) . "</span>";
+					}
 					$result .= "</div>";
 				}
 			} else {

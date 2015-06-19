@@ -16,24 +16,36 @@ $site_url = elgg_get_site_url();
 
 <?php if (elgg_in_context("index")) { ?>
 
-<div class="theme-eersel-slider">
-	<ul class="slides">
-		<?php
-	   
-			$slider_images = theme_eersel_get_slider_images();
-			if (!empty($slider_images)) {
-				$slider_images_keys = array_rand($slider_images, 3);
-				
-				foreach ($slider_images_keys as $key) {
-					echo "<li>";
-					echo elgg_view("output/img", array("src" => $slider_images[$key]));
-					echo "</li>";
-				}
-			}
-	   
-		?>
-	</ul>
-</div>
+<style type="text/css">
+	.elgg-page-header > .elgg-inner,
+	.elgg-page-header {
+		height: 20px;
+	}
+	
+	.elgg-sidebar-alt {
+		margin-top: 150px;
+	}
+	.elgg-widget-add-control {
+		right: 20px;
+		top: 0;
+		position: absolute;
+	}
+	
+	.elgg-layout {
+		padding-top: 0;
+	}
+	
+	.elgg-main {
+		padding-top: 45px;
+	}
+	
+	#elgg-widget-col-2 {
+		width: 63% !important;
+	}
+	#elgg-widget-col-1 {
+		width: 35% !important;
+	}
+</style>
 <?php } elseif (!elgg_in_context("groups") && !elgg_in_context("profile")) { ?>
 <style type="text/css">
 	.elgg-page-body {

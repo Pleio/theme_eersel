@@ -1,4 +1,4 @@
-<?php 
+<?php
 ?>
 <style>
 	.elgg-main {
@@ -26,17 +26,12 @@
 	
 	#elgg-widget-col-1,
 	#elgg-widget-col-2 {
-		width: 48%  !important; 
+		width: 48%  !important;
 	}
 		
 	<?php } elseif (current_page_url() === elgg_get_site_url()) { ?>
-	#elgg-widget-col-1,
 	#elgg-widget-col-2 {
-		width: 48%  !important; 
-	}
-	
-	#elgg-widget-col-2 {
-		margin-right: 2%  !important; 
+		margin-right: 2%  !important;
 	}
 	<?php } ?>
 </style>
