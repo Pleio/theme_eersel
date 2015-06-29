@@ -718,6 +718,10 @@ form.elgg-search,
 	padding: 2px 4px;
 }
 
+.eersel-artikelen .elgg-widget-more a {
+	color: white;
+}
+
 .elgg-widget-instance-index_thewire > .elgg-body {
 	background: none;
 }
