@@ -34,7 +34,7 @@ body {
 	background: url('<?php echo THEME_GRAPHICS; ?>form_inlog.png') top center no-repeat;
 }
 .elgg-module-walledgarden > .elgg-body {
-	width: 250px;
+	width: 280px;
 	position: absolute;
 	top: 200px;
 	left: 100px;
@@ -61,10 +61,6 @@ body {
 	text-transform: uppercase;
 	font-weight: normal;
 	font-size: 18px;
-}
-
-#elgg-walledgarden-lost-password > .elgg-body > .elgg-inner > form {
-	margin: 10px;
 }
 
 .elgg-module-walledgarden-login > .elgg-head {
