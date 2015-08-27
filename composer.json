@@ -1,0 +1,14 @@
+{
+    "name": "pleio/theme_eersel",
+    "description": "Theme Eersel",
+    "type": "elgg-plugin",
+    "keywords": ["elgg", "plugin", "theme"],
+    "license": "GPL-2.0",
+    "support": {
+        "source": "https://github.com/Pleio/theme_eersel",
+        "issues": "https://github.com/Pleio/theme_eersel/issues"
+    },
+    "require": {
+        "composer/installers": "^1.0.8"
+    }
+}
