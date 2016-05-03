@@ -681,6 +681,7 @@ form.elgg-search,
     width: 100%;
 }
 .theme-eersel-bottom-rings {
+	z-index: -1;
 	background: url('<?php echo THEME_GRAPHICS; ?>bottom_rings.png') bottom right no-repeat;
 	height: 441px;
 	width: 410px;
