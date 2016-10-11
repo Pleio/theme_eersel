@@ -37,9 +37,6 @@ function theme_eersel_init() {
 	elgg_extend_view("css/elgg", "css/theme_eersel");
 	elgg_extend_view("css/elgg", "css/theme_eersel_images");
 	elgg_extend_view("page/layouts/widgets", "theme_eersel/widgets_fix");
-	
-// 	elgg_register_js('jquery.flexslider', 'mod/theme_eersel/vendors/jquery.flexslider/jquery.flexslider-min.js');
-// 	elgg_load_js('jquery.flexslider');
 
 	elgg_unextend_view("page/elements/header", "search/header");
 	elgg_unextend_view("page/elements/owner_block/extend", "group_tools/owner_block");
@@ -48,8 +45,12 @@ function theme_eersel_init() {
 	elgg_register_page_handler("theme_eersel", "theme_eersel_page_handler");
 	elgg_register_page_handler("profile", "theme_eersel_profile_page_handler");
 	
+	elgg_register_js('jquery.flexslider', 'mod/theme_eersel/vendors/jquery.flexslider/jquery.flexslider-min.js');
+	elgg_load_js('jquery.flexslider');
+	
 	elgg_register_widget_type("profile_owner_block", elgg_echo("theme_eersel:widgets:profile_owner_block:title"), elgg_echo("theme_eersel:widgets:profile_owner_block:description"), "profile");
 	elgg_register_widget_type("index_photos", elgg_echo("theme_eersel:widgets:index_photos:title"), elgg_echo("theme_eersel:widgets:index_photos:description"), "index");
+	elgg_register_widget_type("index_sidebar", elgg_echo("theme_eersel:widgets:index_sidebar:title"), elgg_echo("theme_eersel:widgets:index_sidebar:description"), "index");
 	
 	elgg_register_plugin_hook_handler("register", "menu:topbar", "theme_eersel_register_topbar_menu_handler");
 	elgg_register_plugin_hook_handler("prepare", "menu:owner_block", "theme_eersel_prepare_owner_block_menu_handler");

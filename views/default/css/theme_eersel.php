@@ -164,6 +164,10 @@ form.elgg-search,
 	color: #<?php echo THEME_COLOR_2; ?>;
 }
 
+.elgg-module-widget.widget_manager_disable_widget_content_style > .elgg-body {
+	background: none;
+}
+
 .profile.elgg-col-2of3 {
 	width: 72%;
 }
@@ -286,7 +290,7 @@ form.elgg-search,
 	width: 229px;
 	height: 293px;
 	padding: 0;
-	margin: 0 0 20px;
+	margin: 40px 0 0;
 }
 
 .elgg-module-theme-eersel-sidebar .sidebar-social {
@@ -561,6 +565,8 @@ form.elgg-search,
 }
 
 .widget_manager_hide_header_admin > .elgg-head {
+	position: absolute;
+	width: 99%;
 	display: none;
 }
 
@@ -625,44 +631,41 @@ form.elgg-search,
 .elgg-widget-instance-index_photos .elgg-body {
 	background: none;
 	padding: 25px 5px 5px;
-	
 }
 
 .theme-eersel-slider {
 	text-align: right;
+	height: 190px;
+}
+.theme-eersel-slider .flex-viewport {
+	overflow: inherit !important;
 }
 .theme-eersel-slider li {
 	display: inline-block;
-	margin-right: 20px;
 	position: relative;
 }
-.theme-eersel-slider li:before {
+.theme-eersel-slider:before {
 	background: url('<?php echo THEME_GRAPHICS; ?>punaise_34px.png') top center no-repeat;
 	display: block;
 	width: 100%;
 	height: 40px;
 	content: "";
 	position: absolute;
-	top: -25px;
+	top: 0px;
+	z-index: 1;
 }
 .theme-eersel-slider li img {
-	height: 80px;
+	max-height: 180px;
 	border: 2px solid white;
 	-webkit-border-radius: 4px;
 	-moz-border-radius: 4px;
 	border-radius: 4px;
 }
-.theme-eersel-slider li:first-child {
-	-ms-transform: rotate(5deg); /* IE 9 */
-    -webkit-transform: rotate(5deg); /* Chrome, Safari, Opera */
-    transform: rotate(5deg);
+.theme-eersel-slider li {
+	-ms-transform: rotate(-2deg); /* IE 9 */
+    -webkit-transform: rotate(-2deg); /* Chrome, Safari, Opera */
+    transform: rotate(-2deg);
 }
-.theme-eersel-slider li:last-child {
-	-ms-transform: rotate(-5deg); /* IE 9 */
-    -webkit-transform: rotate(-5deg); /* Chrome, Safari, Opera */
-    transform: rotate(-5deg);
-}
-
 .theme-eersel-profile-page {
 	padding-top: 0px;
 }
@@ -699,8 +702,7 @@ form.elgg-search,
 }
 
 .eersel-artikelen > .elgg-body {
-	background: url('<?php echo THEME_GRAPHICS; ?>ring_top.png') top left repeat-x;
-	padding-top: 30px;
+	background: transparent;
 }
 .eersel-artikelen .elgg-widget-content {
 	padding: 0;
@@ -716,7 +718,11 @@ form.elgg-search,
 	background: rgba(255,255,255,0.85);
 	border-radius: 4px;
 	margin-top: 2px;
-	padding: 2px 4px;
+	padding: 4px 8px;
+	font-size: 14px;
+}
+.eersel-artikelen .elgg-list > li a {
+	color: #007178;
 }
 
 .eersel-artikelen .elgg-widget-more a {

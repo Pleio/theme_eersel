@@ -46,8 +46,8 @@ $english = array(
 	'theme_eersel:user_sidebar:groups' => "My groups",
 	'theme_eersel:user_sidebar:friends' => "My friends",
 	'theme_eersel:user_sidebar:files' => "My files",
-	'' => "",
-	'' => "",
+	'theme_eersel:widgets:index_sidebar:title' => "Index sidebar",
+	'theme_eersel:widgets:index_sidebar:description' => "Shows a special styled list of links",
 	'' => "",
 
 );

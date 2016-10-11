@@ -36,14 +36,25 @@ $site_url = elgg_get_site_url();
 	}
 	
 	.elgg-main {
-		padding-top: 45px;
+		padding-top: 0px;
 	}
 	
+	.elgg-sidebar,
+	.elgg-sidebar-alt {
+		display: none;
+	}
+	
+	#elgg-widget-col-3 {
+		width: 23% !important;
+		padding-top: 45px;
+	}
 	#elgg-widget-col-2 {
-		width: 63% !important;
+		width: 50% !important;
+		margin-left: 2% !important;
 	}
 	#elgg-widget-col-1 {
-		width: 35% !important;
+		padding-top: 45px;
+		width: 23% !important;
 	}
 </style>
 <?php } elseif (!elgg_in_context("groups") && !elgg_in_context("profile")) { ?>

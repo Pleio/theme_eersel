@@ -1,16 +1,14 @@
 <?php
 ?>
 <div class="theme-eersel-slider">
-	<ul class="slides">
+	<ul class="slides center">
 		<?php
 	   
 			$slider_images = theme_eersel_get_slider_images();
 			if (!empty($slider_images)) {
-				$slider_images_keys = array_rand($slider_images, 3);
-				
-				foreach ($slider_images_keys as $key) {
+				foreach ($slider_images as $image) {
 					echo "<li>";
-					echo elgg_view("output/img", array("src" => $slider_images[$key]));
+					echo elgg_view("output/img", array("src" => $image, 'class' => 'hidden'));
 					echo "</li>";
 				}
 			}
@@ -18,3 +16,11 @@
 		?>
 	</ul>
 </div>
+<script type='text/javascript'>
+$(document).ready(function() {
+	$(".theme-eersel-slider").flexslider({
+    	animation: "slide"
+  	}).find('.hidden').removeClass('hidden');
+  	
+});
+</script>
