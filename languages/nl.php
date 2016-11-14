@@ -44,6 +44,9 @@ $dutch = array(
 	'theme_eersel:user_sidebar:groups' => "Mijn groepen",
 	'theme_eersel:user_sidebar:friends' => "Mijn contacten",
 	'theme_eersel:user_sidebar:files' => "Mijn bestanden",
+	
+	'theme_eersel:widgets:index_groups:which_groups' => "Welke groepen moeten getoond worden",
+	
 );
 
 add_translation('nl', $dutch);
