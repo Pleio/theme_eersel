@@ -119,6 +119,9 @@ if ($widget->show_members == "yes") {
 	$show_members = false;
 }
 
+// show activity count
+elgg_push_context('theme_eersel_group_activity');
+
 // list groups
 $groups = elgg_list_entities($options, $getter);
 if (!empty($groups)) {
@@ -126,6 +129,8 @@ if (!empty($groups)) {
 } else {
 	echo elgg_echo("groups:none");
 }
+
+elgg_pop_context();
 
 if ($show_members) {
 	elgg_pop_context();

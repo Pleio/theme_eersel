@@ -844,3 +844,25 @@ form.elgg-search,
 	-moz-border-radius: 4px;
 	border-radius: 4px;
 }
+
+.elgg-widget-instance-index_groups .elgg-item .elgg-image {
+	position: relative;
+}
+
+.theme-eersel-group-activity-count {
+	position: absolute;
+	background: #498f96;
+	color: white;
+	border-radius: 10px !important;
+	position: absolute;
+
+	font-size: 8px;
+	border-radius: 20px !important;
+	min-width: 16px;
+	height: 16px;
+	text-align: center;
+	top: -3px;
+	right: -3px;
+	
+	z-index: 1;
+}

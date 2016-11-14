@@ -32,12 +32,15 @@ function theme_eersel_init() {
 	
 	elgg_register_css('font-awesome', 'mod/theme_eersel/vendors/font-awesome-4.3.0/css/font-awesome.min.css');
 	elgg_load_css('font-awesome');
-			
+	
+	// extend views
 	elgg_extend_view("js/elgg", "js/theme_eersel");
 	elgg_extend_view("css/elgg", "css/theme_eersel");
 	elgg_extend_view("css/elgg", "css/theme_eersel_images");
 	elgg_extend_view("page/layouts/widgets", "theme_eersel/widgets_fix");
-
+	
+	elgg_extend_view('icon/default', 'theme_eersel/group/icon', 400);
+	
 	elgg_unextend_view("page/elements/header", "search/header");
 	elgg_unextend_view("page/elements/owner_block/extend", "group_tools/owner_block");
 	
@@ -48,17 +51,24 @@ function theme_eersel_init() {
 	elgg_register_js('jquery.flexslider', 'mod/theme_eersel/vendors/jquery.flexslider/jquery.flexslider-min.js');
 	elgg_load_js('jquery.flexslider');
 	
+	// register widgets
 	elgg_register_widget_type("profile_owner_block", elgg_echo("theme_eersel:widgets:profile_owner_block:title"), elgg_echo("theme_eersel:widgets:profile_owner_block:description"), "profile");
 	elgg_register_widget_type("index_photos", elgg_echo("theme_eersel:widgets:index_photos:title"), elgg_echo("theme_eersel:widgets:index_photos:description"), "index");
 	elgg_register_widget_type("index_sidebar", elgg_echo("theme_eersel:widgets:index_sidebar:title"), elgg_echo("theme_eersel:widgets:index_sidebar:description"), "index");
 	
+	// register plugin hooks
 	elgg_register_plugin_hook_handler("register", "menu:topbar", "theme_eersel_register_topbar_menu_handler");
 	elgg_register_plugin_hook_handler("prepare", "menu:owner_block", "theme_eersel_prepare_owner_block_menu_handler");
 	
 	elgg_register_plugin_hook_handler('route', 'groups', 'theme_eersel_route_groups_handler');
 	
+	// register events
+	elgg_register_event_handler('pagesetup', 'system', 'theme_eersel_pagesetup');
+	
+	// register admin menu item
 	elgg_register_admin_menu_item("configure", "theme_eersel", "appearance");
 	
+	// register actions
 	elgg_register_action("theme_eersel/slider_upload", dirname(__FILE__) . "/actions/slider_upload.php", "admin");
 	elgg_register_action("theme_eersel/links", dirname(__FILE__) . "/actions/links.php", "admin");
 }
@@ -74,4 +84,28 @@ function theme_eersel_translations() {
 	);
 	
 	add_translation("nl", $nl);
+}
+
+/**
+ * called during pagesetup
+ *
+ * @return void
+ */
+function theme_eersel_pagesetup() {
+	
+	if (!elgg_is_logged_in()) {
+		return;
+	}
+	
+	$user = elgg_get_logged_in_user_entity();
+	
+	// store last page view in session for further use
+	if (!isset($_SESSION['theme_eersel_activity_last_action'])) {
+		$plugin_setting = (int) elgg_get_plugin_user_setting('river_last_view', $user->getGUID(), 'theme_eersel');
+		if (!empty($plugin_setting)) {
+			$_SESSION['theme_eersel_activity_last_action'] = $plugin_setting;
+		}
+	}
+	
+	elgg_set_plugin_user_setting('river_last_view', time(), $user->getGUID(), 'theme_eersel');
 }

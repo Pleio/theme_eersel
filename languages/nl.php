@@ -46,7 +46,7 @@ $dutch = array(
 	'theme_eersel:user_sidebar:files' => "Mijn bestanden",
 	
 	'theme_eersel:widgets:index_groups:which_groups' => "Welke groepen moeten getoond worden",
-	
+	'theme_eersel:group:icon:activity' => "Activiteit sinds laatste aanmelding %s",
 );
 
 add_translation('nl', $dutch);

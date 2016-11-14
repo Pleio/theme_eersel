@@ -50,6 +50,7 @@ $english = array(
 	'theme_eersel:widgets:index_sidebar:description' => "Shows a special styled list of links",
 	
 	'theme_eersel:widgets:index_groups:which_groups' => "Which groups to show",
+	'theme_eersel:group:icon:activity' => "Activity since last login %s",
 
 );
 

@@ -5,10 +5,10 @@
 
 /**
  * Prepend some widget titles with an icon
- * 
+ *
  * @param ElggWidget $widget the current widget
  * @param string     $title  the current title
- * 
+ *
  * @return string
  */
 function theme_eersel_prepend_widget_title_with_icon(ElggWidget $widget, $title) {
@@ -129,4 +129,48 @@ function theme_eersel_get_slider_images() {
 	}
 	
 	return $result;
+}
+
+/**
+ * Get the activity count since last action of the previous login of the user
+ *
+ * @param ElggGroup $group the group to check for
+ *
+ * @return false|int
+ */
+function theme_eersel_get_group_activity_count(ElggGroup $group) {
+	
+	if (!($group instanceof ElggGroup)) {
+		return false;
+	}
+	
+	if (!elgg_is_logged_in() || empty($_SESSION['theme_eersel_activity_last_action'])) {
+		return false;
+	}
+	
+	if (!is_array($_SESSION['theme_eersel_group_activity_counter'])) {
+		$_SESSION['theme_eersel_group_activity_counter'] = [];
+	}
+	
+	if (isset($_SESSION['theme_eersel_group_activity_counter'][$group->getGUID()])) {
+		return $_SESSION['theme_eersel_group_activity_counter'][$group->getGUID()];
+	}
+	
+	// get river activity since last action of user
+	$dbprefix = elgg_get_config('dbprefix');
+	
+	$options = [
+		'count' => true,
+		'joins' => [
+			"JOIN {$dbprefix}entities oe ON rv.object_guid = oe.guid",
+		],
+		'wheres' => [
+			"(rv.object_guid = {$group->getGUID()} || oe.container_guid = {$group->getGUID()})",
+		],
+		'posted_time_lower' => (int) $_SESSION['theme_eersel_activity_last_action'],
+	];
+	
+	$_SESSION['theme_eersel_group_activity_counter'][$group->getGUID()] = elgg_get_river($options);
+	
+	return $_SESSION['theme_eersel_group_activity_counter'][$group->getGUID()];
 }
